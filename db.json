@@ -1,0 +1,182 @@
+[
+  {
+    "id": "1",
+    "name": "Eiffel Tower",
+    "description": "Iconic iron lattice tower on the Champ de Mars in Paris, France.",
+    "rating": 5,
+    "location": "Paris",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Machu Picchu",
+    "description": "Ancient Inca city set high in the Andes Mountains in Peru.",
+    "rating": 4.8,
+    "location": "Cusco Region, Peru",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Great Wall of China",
+    "description": "Series of fortifications and walls built across the historical northern borders of ancient Chinese states.",
+    "rating": 4.7,
+    "location": "Northern China",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Taj Mahal",
+    "description": "An ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, India.",
+    "rating": 4.6,
+    "location": "Agra, India",
+    "favorite": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg"
+  },
+  {
+    "id": "5",
+    "name": "Colosseum",
+    "description": "Oval amphitheatre in the centre of the city of Rome, Italy.",
+    "rating": 4.7,
+    "location": "Rome, Italy",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Colosseo_2020.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Petra",
+    "description": "Ancient city famous for its rock-cut architecture in southern Jordan.",
+    "rating": 4.6,
+    "location": "Ma\"an Governorate, Jordan",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Urn_Tomb%2C_Petra_01.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Christ the Redeemer",
+    "description": "Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil.",
+    "rating": 4.5,
+    "location": "Rio de Janeiro, Brazil",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Christ_the_Redeemer_-_Cristo_Redentor.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Statue of Liberty",
+    "description": "Symbol of freedom and democracy located on Liberty Island in New York City.",
+    "rating": 4.7,
+    "location": "New York City, USA",
+    "favorite": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Front_view_of_Statue_of_Liberty_with_pedestal_and_base_2024.jpg"
+  },
+  {
+    "id": "9",
+    "name": "Stonehenge",
+    "description": "Prehistoric monument consisting of a ring of standing stones in Wiltshire, England.",
+    "rating": 4.3,
+    "location": "\"Wiltshire, England\"",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Stonehenge2007_07_30.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Sydney Opera House",
+    "description": "Multi-venue performing arts center located on Bennelong Point in Sydney, Australia.",
+    "rating": 4.6,
+    "location": "Sydney, Australia",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Sydney_Australia._%2821339175489%29.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Santorini",
+    "description": "A picturesque island known for its stunning sunsets and whitewashed buildings.",
+    "rating": 4.8,
+    "location": "Santorini, Greece",
+    "favorite": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Santorini_Montage_L.png"
+  },
+  {
+    "id": "12",
+    "name": "Grand Canyon",
+    "description": "A steep-sided canyon carved by the Colorado River in Arizona, USA.",
+    "rating": 4.9,
+    "location": "Arizona, USA",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Canyon_River_Tree_%28165872763%29.jpeg"
+  },
+  {
+    "id": "13",
+    "name": "Niagara Falls",
+    "description": "Famous waterfalls located on the border between Canada and the USA.",
+    "rating": 4.6,
+    "location": "Ontario, Canada / New York, USA",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/3Falls_Niagara.jpg"
+  },
+  {
+    "id": "14",
+    "name": "Burj Khalifa",
+    "description": "The tallest building in the world located in Dubai, UAE.",
+    "rating": 4.7,
+    "location": "Dubai, UAE",
+    "favorite": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg"
+  },
+  {
+    "id": "15",
+    "name": "Acropolis of Athens",
+    "description": "Ancient citadel containing several buildings of great architectural and historic significance.",
+    "rating": 4.6,
+    "location": "Athens, Greece",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Classic_view_of_Acropolis.jpg"
+  },
+  {
+    "id": "16",
+    "name": "Big Ben",
+    "description": "The nickname for the Great Bell of the clock at the north end of the Palace of Westminster in London.",
+    "rating": 4.5,
+    "location": "London, England",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Elizabeth_Tower%2C_June_2022.jpg"
+  },
+  {
+    "id": "17",
+    "name": "Sagrada Familia",
+    "description": "A large unfinished Roman Catholic basilica in Barcelona, Spain designed by architect Antoni Gaudí.",
+    "rating": 4.8,
+    "location": "Barcelona, Spain",
+    "favorite": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sagrada_Familia_1-4-24.jpg"
+  },
+  {
+    "id": "18",
+    "name": "Angkor Wat",
+    "description": "A temple complex in Cambodia and one of the largest religious monuments in the world.",
+    "rating": 4.9,
+    "location": "Siem Reap Province, Cambodia",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/20171126_Angkor_Wat_4712_DxO.jpg"
+  },
+  {
+    "id": "19",
+    "name": "Pyramids of Giza",
+    "description": "The oldest of the Seven Wonders of the Ancient World and the only one to remain largely intact.",
+    "rating": 4.7,
+    "location": "Giza, Egypt",
+    "favorite": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Pyramids_of_the_Giza_Necropolis.jpg"
+  },
+  {
+    "id": "20",
+    "name": "Mount Fuji",
+    "description": "An iconic strato-volcano and Japan's highest peak.",
+    "rating": 4.6,
+    "location": "Honshu Island, Japan",
+    "favorite": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg"
+  }
+]
