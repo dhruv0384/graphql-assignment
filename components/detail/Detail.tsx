@@ -68,20 +68,6 @@ const MARK_FAVORITE = gql`
   }
 `
 
-const GET_DESTINATION_BY_ID= gql`
-  query GetDestinationById ($id: ID!) {
-    getDestinationById(id: $id){
-      id
-      name
-      description
-      location
-      image
-      rating
-      favorite
-    }
-  }
-`
-
 export function Detail({ id }: { id: string }) {
   const { destination, loading } = useDestinationByIdQuery({ id });
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -146,7 +132,7 @@ export function Detail({ id }: { id: string }) {
   const toggleFavorite = useCallback(async () => {
     // TODO: add handling for favorite here
     try {
-      const result = await markFavorite({
+      await markFavorite({
         variables: {
           id,
           value: !isFavorite
@@ -155,20 +141,19 @@ export function Detail({ id }: { id: string }) {
           markFavorite : !isFavorite
         },
         update(cache, {data}){
-          if(!data?.markFavorite === null) return;
+          if(data?.markFavorite == null) return;
           cache.modify({
             id: cache.identify({
               __typename: 'Destination',
               id
             }),
             fields: {
-              favorite: () => data.markFavorite,
+              favorite: () => !isFavorite,
             }
           })
         }
       })
       toast.success(isFavorite ? "Removed from favorites" : "Added to favorites");
-      // isFavorite = result.data?.markFavorite
     } catch (err) {
       toast.error("Failed");
     }

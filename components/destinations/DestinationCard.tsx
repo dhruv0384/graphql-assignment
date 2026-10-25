@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import Link from "next/link";
 import { MapPin, Star, Heart } from "lucide-react";
+import { useMutation, gql } from '@apollo/client'
 
 // components
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,6 +9,13 @@ import { Button } from "@/components/ui/button";
 
 // types
 import { Destination } from "@/types";
+import toast from "react-hot-toast";
+
+const MARK_FAVORITE = gql`
+  mutation MarkFavorite($id: ID!, $value: Boolean){
+    markFavorite(id: $id, value: $value)
+  }
+`
 
 export const DestinationCard = ({
   destination,
@@ -15,11 +23,39 @@ export const DestinationCard = ({
   destination: Destination;
 }) => {
   const { id, name, favorite, location, rating } = destination;
-  const toggleFavorite = useCallback((event) => {
+  const [markFavorite] = useMutation(MARK_FAVORITE);
+
+  const toggleFavorite = useCallback(async (event) => {
     event.preventDefault();
     // TODO: implement this
-    console.log("Unimplemented");
-  }, []);
+    try {
+      await markFavorite({
+        variables: {
+          id,
+          value: !favorite,
+        },
+        optimisticResponse: {
+          markFavorite: !favorite
+        },
+        update(cache, {data}){
+          if(!data?.markFavorite) return;
+
+          cache.modify({
+            id: cache.identify({
+              __typename: 'Destination',
+              id
+            }),
+            fields: {
+              favorite: () => !favorite,
+            }
+          })
+        }
+      })
+      toast.success(favorite ? "Removed from favorites" : "Added to favorites");
+    } catch (err){
+      toast.error("Failed")
+    }
+  }, [id, markFavorite, favorite]);
 
   return (
     <Link key={id} href={`/destination/${id}`}>

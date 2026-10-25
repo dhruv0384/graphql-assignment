@@ -5,7 +5,7 @@
     "description": "Iconic iron lattice tower on the Champ de Mars in Paris, France.",
     "rating": 5,
     "location": "Paris",
-    "favorite": false,
+    "favorite": true,
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg"
   },
   {
